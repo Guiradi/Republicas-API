@@ -1,0 +1,12 @@
+type Republica {
+  id: Int!
+  description: String!
+}
+
+type Query {
+  republicas: [Republica]!
+}
+
+type Mutation {
+  createRepublica(description: String!): Republica!
+}

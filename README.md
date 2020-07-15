@@ -1,4 +1,4 @@
 # SempApp - API
 
 - nest new api
-- yarn add @nestjs/graphql graphql-tools graphql apollo-server-express
+- yarn add @nestjs/graphql graphql-tools graphql apollo-server-express apollo-server-core
