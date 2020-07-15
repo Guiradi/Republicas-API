@@ -605,6 +605,18 @@
     consola "^2.3.0"
     node-fetch "^2.3.0"
 
+"@prisma/cli@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.2.2.tgz#9689483442277523b5724abdafde69f15b8279f0"
+  integrity sha512-pk18QyfTHsAGctqoBu4pd9k/pAJ+uaD5GfrAE1gZkGuhmUGjh2hXmgJEKeQK+n1J4fvcstmDi38oHwskYyBv9w==
+
+"@prisma/client@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.2.2.tgz#ad6873d9c97143e7cd2ed6fc3b7a299259453814"
+  integrity sha512-//Ji25pubuXCJDcXaE7Es/ytRB7ojdj8H2YCIkziQVWY62Nl/j9vXYM7WzA4z1lysOlbKFlH9e0W1sy6LQpUpg==
+  dependencies:
+    pkg-up "^3.1.0"
+
 "@schematics/schematics@0.901.9":
   version "0.901.9"
   resolved "https://registry.yarnpkg.com/@schematics/schematics/-/schematics-0.901.9.tgz#298b59acfe5b478ba12c80feb42a9e618ef2522e"
@@ -5291,6 +5303,13 @@ pkg-dir@^4.2.0:
   integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
   dependencies:
     find-up "^4.0.0"
+
+pkg-up@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-3.1.0.tgz#100ec235cc150e4fd42519412596a28512a0def5"
+  integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
+  dependencies:
+    find-up "^3.0.0"
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
