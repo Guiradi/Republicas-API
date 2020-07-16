@@ -4,6 +4,6 @@ import { Controller, Get } from "@nestjs/common";
 export class AppController {
   @Get()
   getHello(): string {
-    return "É quente!<br />É Sem Parar!"
+    return "É Quente!<br />É Sem Parar!"
   }
 }
