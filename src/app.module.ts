@@ -1,11 +1,19 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { GraphQLModule } from '@nestjs/graphql';
+import { PrismaModule } from './modules/prisma/prisma.module';
 import { PrismaService } from './modules/prisma/prisma.service';
+import { UserModule } from './modules/user/user.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService, PrismaService],
+  imports: [GraphQLModule.forRoot({
+    typePaths: ['./**/*.graphql'],
+    resolverValidationOptions: {
+      requireResolversForResolveType: false,
+    }
+  }), 
+    PrismaModule, 
+    UserModule,
+  ],
+  providers: [PrismaService],
 })
-export class AppModule {}
+export class AppModule { }

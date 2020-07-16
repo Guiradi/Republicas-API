@@ -6,3 +6,5 @@
 - npx prisma migrate save --experimental (cria a migration)
 - npx prisma migrate up --experimental (roda)
 - npx prisma generate
+
+- yarn add @nestjs/graphql graphql-tools graphql apollo-server-express @apollo/gateway
