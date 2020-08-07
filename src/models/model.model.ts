@@ -1,8 +1,8 @@
 import { Field, ID, ObjectType, registerEnumType } from "@nestjs/graphql";
 
 export enum Status {
-  DELETED,
-  ACTIVE
+  DELETED = 'DELETED',
+  ACTIVE = 'ACTIVE'
 }
 
 registerEnumType(Status, {

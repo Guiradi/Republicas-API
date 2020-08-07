@@ -4,8 +4,8 @@ import { Room } from './room.model';
 import { Republica } from './republica.model';
 
 export enum Role {
-  USER,
-  ADMIN
+  USER = 'USER',
+  ADMIN = 'ADMIN'
 }
 
 registerEnumType(Role, {
@@ -14,8 +14,8 @@ registerEnumType(Role, {
 });
 
 export enum HomeSituation {
-  MORADOR,
-  EXMORADOR
+  MORADOR = 'MORADOR',
+  EXMORADOR = 'EXMORADOR'
 }
 
 registerEnumType(HomeSituation, {
